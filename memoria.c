@@ -1,1 +1,1 @@
-
+int **reservamemoria();
