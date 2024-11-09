@@ -1,0 +1,21 @@
+void leerArrayBidi(int **puntero, int filas, int columnas) {
+    int i, j;
+
+    for (i = 0; i < filas; i++) {
+        for (j = 0; j < columnas; j++) {
+            printf("Introduce el valor [%d][%d]: ", i, j);
+            scanf("%d", &puntero[i][j]);
+        }
+    }
+}
+
+void muestraArrayBidi(int **puntero, int filas, int columnas) {
+    int i, j;
+
+    for (i = 0; i < filas; i++) {
+        for (j = 0; j < columnas; j++) {
+            printf("%d ", *(*(puntero + i) + j));
+        }
+        printf("\n"); // Salto de línea después de cada fila
+    }
+}
